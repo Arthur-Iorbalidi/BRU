@@ -1,0 +1,15 @@
+.images {
+    background-color: #000;
+    padding: 100px;
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}

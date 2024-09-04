@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 30px 50px;
+    border-bottom: 2px solid white;
+    h1 {
+        color: white;
+        font-size: 3rem;
+    }
+}
