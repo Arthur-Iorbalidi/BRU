@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "React JS Best Practices From The New Docs",
+    "author": "Sebastian Carlos",
+    "url": "https://sebastiancarlos.com/react-js-best-practices-from-the-new-docs-1c65570e785d",
+    "logoUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*I5cfGM7n7kMkU2mhlMNlfw.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "A Cure for React useState Hell?",
+    "author": "builder.io",
+    "url": "https://www.builder.io/blog/use-reducer",
+    "logoUrl": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fa66e640329e847cdb739e1c9475d2484"
+  },
+  {
+    "id": 3,
+    "title": "Setup ESLint with React",
+    "author": "Maria Simo",
+    "url": "https://www.z1.digital/blog/eslint-guide-how-to-use-it-with-confidence",
+    "logoUrl": "https://static-img.2coffee.dev/eslint-la-gi-va-cach-dung-eslint-de-phat-hien-sua-chua-ma-cho-du-an-javascript.webp"
+  },
+  {
+    "id": 4,
+    "title": "How To Build and Deploy a ChatGPT Clone Application With React and OpenAI API",
+    "author": "Joel Olawanle",
+    "url": "https://kinsta.com/blog/chatgpt-clone/",
+    "logoUrl": "https://kinsta.com/wp-content/uploads/2023/03/chatgpt-clone-application.jpg"
+  }
+]

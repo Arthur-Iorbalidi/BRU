@@ -1,0 +1,64 @@
+.wrapper {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(77, 77, 77, 0.7);
+  padding: 5vh 5vw;
+}
+.articleModal {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 25px;
+  background-color: #000;
+  .logoWrapper {
+    padding: 30px 30px 30px 30px;
+    border-radius: 18px 18px 0 0;
+    border-bottom: 3px solid #3b3b3b;
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    width: 100%;
+    border-radius: 15px;
+    transition: 400ms all;
+  }
+  .content {
+    padding: 20px 20px 20px 20px;
+    border-radius: 0 0 18px 18px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex: 1;
+    flex-direction: column;
+  }
+  .theme {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .LinkAndAuthor {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .author {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .link {
+    .linkIcon {
+      height: 100%;
+    }
+  }
+}
+
+@media (hover: hover) {
+  .link:hover {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,16 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  .notFoundText {
+    font-size: 3rem;
+  }
+  .link {
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 2rem;
+    background-color: #3b3b3b;
+  }
+}

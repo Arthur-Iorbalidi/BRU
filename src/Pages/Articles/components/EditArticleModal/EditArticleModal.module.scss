@@ -1,0 +1,61 @@
+.wrapper {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(77, 77, 77, 0.7);
+  padding: 5vh 5vw;
+}
+.editModal {
+  padding: 30px;
+  border-radius: 25px;
+  background-color: #000;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.formFieldWrapper {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formField {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 5px;
+  background-color: #000;
+  border-radius: 10px;
+  border: 2px solid rgb(118, 118, 118);
+}
+.formTitle {
+  font-size: 2rem;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.cancelIcon,
+.confirmIcon {
+  width: 100%;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    transform: scale(1.2);
+  }
+}

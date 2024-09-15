@@ -1,0 +1,91 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #3b3b3b;
+  border-radius: 18px;
+  cursor: pointer;
+  .logoWrapper {
+    padding: 15px 15px 15px 15px;
+    border-radius: 18px 18px 0 0;
+    border-bottom: 3px solid #3b3b3b;
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    width: 100%;
+    border-radius: 15px;
+    transition: 400ms all;
+  }
+  .content {
+    padding: 20px 10px 10px 10px;
+    border-radius: 0 0 18px 18px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex: 1;
+    flex-direction: column;
+  }
+  .theme {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .btnsAndAuthor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .author {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .btnsAndLink {
+    display: flex;
+    justify-content: space-between;
+    .btns {
+      display: flex;
+      gap: 10px;
+    }
+    .delete,
+    .edit {
+      width: 30px;
+      cursor: pointer;
+    }
+    .link {
+      .linkIcon {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .article {
+    .theme {
+      font-size: 2rem;
+    }
+    .author {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .article {
+    .theme {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+@media (hover: hover) {
+  .article:hover {
+    .logo {
+      transform: scale(0.9);
+    }
+  }
+  .delete:hover,
+  .edit:hover,
+  .link:hover {
+    transform: scale(1.2);
+  }
+}
