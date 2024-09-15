@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 20px 50px;
+  border-bottom: 2px solid white;
+  nav {
+    ul {
+      display: flex;
+      gap: 20px;
+      .link {
+        font-size: 2rem;
+        border-radius: 15px;
+        padding: 20px;
+        transition: 300ms all;
+        &.active {
+          background-color: #3b3b3b;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    padding: 20px 15px;
+    nav {
+      ul {
+        gap: 10px;
+        .link {
+          font-size: 1.5rem;
+          border-radius: 15px;
+          padding: 10px;
+          &.active {
+            background-color: #3b3b3b;
+          }
+        }
+      }
+    }
+  }
+}
