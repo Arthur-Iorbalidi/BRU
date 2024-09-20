@@ -6,6 +6,7 @@ import ArticleModal from './components/ArticleModal/ArticleModal';
 import IArticle from '../../interfaces/IArticle';
 import EditArticleModal from './components/EditArticleModal/EditArticleModal';
 import CreateArticleModal from './components/CreateArticleModal/CreateArticleModal';
+import { Alert, Grid2, Snackbar } from '@mui/material';
 
 const Articles = () => {
   const [articles, setArticles] = useState(articlesData);
@@ -18,8 +19,13 @@ const Articles = () => {
 
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
 
+  const [snackOpen, setSnackOpen] = useState(false);
+
   const handleDelete = (id: number) => {
     const updatedArticles = articles.filter((article) => article.id !== id);
+
+    setSnackOpen(true);
+
     setArticles(updatedArticles);
   };
 
@@ -73,7 +79,11 @@ const Articles = () => {
       <button className={styles.newArticleBtn} onClick={handleCreateArticle}>
         New Article
       </button>
-      <div className={styles.articlesWrapper}>
+      <Grid2
+        container
+        spacing={{ xs: 2, md: 4 }}
+        sx={{ p: { md: 6, sm: 3, xs: 2 } }}
+      >
         {isModalOpen && (
           <ArticleModal
             article={modalData!}
@@ -105,7 +115,21 @@ const Articles = () => {
             key={article.id}
           />
         ))}
-      </div>
+
+        <Snackbar
+          open={snackOpen}
+          autoHideDuration={3000}
+          onClose={() => setSnackOpen(false)}
+        >
+          <Alert
+            severity="success"
+            variant="outlined"
+            sx={{display: 'flex', alignItems: 'center', fontSize: '1.5rem'}}
+          >
+            Successfully removed
+          </Alert>
+        </Snackbar> 
+      </Grid2>
     </div>
   );
 };

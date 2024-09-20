@@ -3,12 +3,7 @@
   flex-direction: column;
   align-items: center;
 }
-.articlesWrapper {
-  padding: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
+
 .newArticleBtn {
   padding: 10px;
   border-radius: 15px;
