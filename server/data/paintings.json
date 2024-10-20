@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Starry Night",
+    "date": "1889",
+    "author": "Vincent van Gogh"
+  },
+  {
+    "id": 2,
+    "title": "Mona Lisa",
+    "date": "1503",
+    "author": "Leonardo da Vinci"
+  }
+]
